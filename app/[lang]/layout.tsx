@@ -12,21 +12,27 @@ export const metadata: Metadata = {
   description: 'Lithophany site',
 }
 
+export async function generateStaticParams() {
+  return [{ lang: 'en' }, { lang: 'ru' }, { lang: 'hy' }]
+}
+
+
 export default function RootLayout({
-  children,
+  children, params
 }: {
   children: React.ReactNode
+  params: { lang: string }
 },
 ) 
 {
 
-  // const lang = params
+  const locale = params.lang
 
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={inter.className}>
         <div className='bg-slate-300'>
-          <Header />
+          <Header lang={locale}/>
 
           {children}
 

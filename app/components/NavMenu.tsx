@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { use, useState } from "react";
 
-export default function NavMenu() {
+
+export default function NavMenu( {lang} : {lang: string}) {
 
     const [menuType, setmenuType] = useState("hidden");
     return (
@@ -12,13 +13,13 @@ export default function NavMenu() {
             <div className="hidden lg:block">
                 <ul className="inline-flex items-center">
                     <li className="nav-element">
-                    <Link href="#">Home</Link>
+                    <Link href={`/${lang}/`}>Home</Link>
                     </li>
                     <li className="nav-element">
-                    <Link href="#product">Product</Link>
+                    <Link href={`/${lang}/product/litho_photo`}>Product</Link>
                     </li>
                     <li className="nav-element">
-                    <Link href="#contact">Contact us</Link>
+                    <Link href={`/${lang}#contacts`}>Contact us</Link>
                     </li>
                 </ul>
             </div>

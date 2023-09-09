@@ -2,7 +2,7 @@ import Image from "next/image"
 
 import NavMenu from "./NavMenu"
 
-export default function Header() {
+export default function Header( {lang}: {lang: string}) {
     return (
         <header className="bg-slate-700 p-2">
           <div className="flex items-center justify-between h-auto m-auto text-amber-100 lg:max-w-screen-xl ">
@@ -13,7 +13,7 @@ export default function Header() {
               height={200}
               alt="Litho"
             />
-            <NavMenu/>
+            <NavMenu lang={lang}/>
           </div>
  
       </header>
