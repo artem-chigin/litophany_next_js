@@ -16,7 +16,7 @@ export default function NavMenu( {lang} : {lang: string}) {
                     <Link href={`/${lang}/`}>Home</Link>
                     </li>
                     <li className="nav-element">
-                    <Link href={`/${lang}/product/litho_photo`}>Product</Link>
+                    <Link href={`/${lang}#gallery`}>Product</Link>
                     </li>
                     <li className="nav-element">
                     <Link href={`/${lang}#contacts`}>Contact us</Link>

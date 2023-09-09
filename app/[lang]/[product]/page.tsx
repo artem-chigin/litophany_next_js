@@ -1,10 +1,15 @@
-import Image from "next/image"
 import Carousel from "@/app/components/Carousel"
+
+
+export async function generateStaticParams() {
+    return [{ product: 'photo' }, { product: 'night_lamp' }, { product: 'cylinder_lamp' }, {product: 'cube_lamp'}]
+  }
 
 let imagePaths = ["/products/litho-photo/photo1.jpg", "/products/litho-photo/photo2.jpg"];
 
 
-export default function Product() {
+export default function Product( params: { product: string }
+    ) {
     return (
         <section className="py-10 max-w-screen-xl m-auto border">
             <h3 className="py-3 text-center text-5xl text-gray-800">Litho Photo</h3>

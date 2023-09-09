@@ -12,7 +12,7 @@ export default function Page({ params }: { params: { lang: string } }) {
   <div className="">
     {/* My Post: {params.lang} */}
     <Home />
-    <Gallery />
+    <Gallery lang={params.lang}/>
 
   </div>)
   }
