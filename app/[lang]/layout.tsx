@@ -3,6 +3,11 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
 import { i18n } from '@/i18n-config'
+import { getDictionary } from '@/get-dictionary'
+import { Locale } from "../../i18n-config"
+
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,14 +21,16 @@ export async function generateStaticParams() {
 }
 
 
-export default function RootLayout({
+export default async function RootLayout({
   children, params
 }: {
   children: React.ReactNode
-  params: { lang: string }
+  params: { lang: Locale }
 },
 ) 
 {
+
+  const dictionary = await getDictionary(params.lang)
 
   return (
     <html lang={params.lang}>
@@ -31,11 +38,11 @@ export default function RootLayout({
 
         <div className='bg-slate-300'>
 
-          {/* <Header lang={params.lang}/> */}
+        <Header lang={params.lang} menu={dictionary.Navbar} />
 
           {children}
 
-          {/* <Footer /> */}
+          <Footer />
 
         </div>
         

@@ -12,17 +12,15 @@ export default async function Page({
 }: {
   params: { lang: Locale }
 }) {
+
   const dictionary = await getDictionary(lang)
+
   return (
   <div className="">
-    <Header lang={lang} menu={dictionary.Navbar} />
 
     {/* My Post: {dictionary.Page.title} */}
     <Home />
     <Gallery lang={lang} data={dictionary.Gallery}/>
-
-    <Footer />
-
 
   </div>)
   }
