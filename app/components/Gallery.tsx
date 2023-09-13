@@ -12,17 +12,17 @@ export default function Gallery({lang, data}: {lang: string, data: any}) {
     <div className="flex-wrap lg:flex justify-center">
         <Card 
 			title={data.products.photo}
-			path_to_img="/products/litho-photo/photo1.jpg"
+			path_to_img="/products/litho_photo/photo1.jpg"
             link={`${lang}/photo`}
 			alt ="Litho Photo"/>
         <Card 
 			title={data.products.night_lamp}
-			path_to_img="/products/litho-photo/photo1.jpg"
-            link={`${lang}/night_lamp`}
-			alt ="some description"/>
+			path_to_img="/products/night_lamp/photo1.jpg"
+            link={`${lang}/night_lamp`} 
+			alt ="Image of Nightlamp"/>
         <Card 
 			title={data.products.cylinder_lamp}
-			path_to_img="/products/litho-photo/photo1.jpg"
+			path_to_img="/products/cylinder_lamp/photo1.jpg"
             link={`${lang}/cylinder_lamp`}
 			alt ="Image of Cylinder Lamp"/>
         <Card 

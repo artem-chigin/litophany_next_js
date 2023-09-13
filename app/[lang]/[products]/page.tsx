@@ -3,16 +3,6 @@ import path from "path";
 
 import Carousel from "@/app/components/Carousel"
 
-const postsDirectory = path.join(process.cwd(), "temp");
-
-
-function getProductData() {
-    const filenames = fs.readdirSync(postsDirectory)
-    return filenames
-};
-
-
-
 export async function generateStaticParams() {
 
     return [{ products: 'photo' }, { products: 'night_lamp' }, { products: 'cylinder_lamp' }, {products: 'cube_lamp'}]
@@ -23,8 +13,8 @@ let imagePaths = ["/products/litho-photo/photo1.jpg", "/products/litho-photo/pho
 
 export default function Product( params: { products: string }
     ) {
-        let x = postsDirectory
-        console.log(x)
+        // let x = postsDirectory
+        // console.log(x)
 
     return (
         <section className="py-10 max-w-screen-xl m-auto border">
