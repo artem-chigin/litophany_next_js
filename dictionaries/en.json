@@ -1,0 +1,11 @@
+{
+    "Page": {
+    "title": "Hi"
+    },
+
+    "Navbar": {
+        "home": "Home",
+        "product": "Product",
+        "contact_us": "Contact us"
+    }
+}

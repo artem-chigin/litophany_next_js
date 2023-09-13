@@ -1,18 +1,28 @@
 import Home from "../components/Home"
 import Gallery from "../components/Gallery"
+import Header from "../components/Header"
+import Footer from "../components/Footer"
 
-// export function generateStaticParams() {
-//   return [{ lang: 'en' }, { lang: 'ru' }, { lang: 'hy' }]
-// }
+import { getDictionary } from "../../get-dictionary"
+import { Locale } from "../../i18n-config"
 
 
-export default function Page({ params }: { params: { lang: string } }) {
-
+export default async function Page({
+  params: { lang },
+}: {
+  params: { lang: Locale }
+}) {
+  const dictionary = await getDictionary(lang)
   return (
   <div className="">
-    {/* My Post: {params.lang} */}
+    <Header lang={lang} menu={dictionary.Navbar} />
+
+    {/* My Post: {dictionary.Page.title} */}
     <Home />
-    <Gallery lang={params.lang}/>
+    <Gallery lang={lang}/>
+
+    <Footer />
+
 
   </div>)
   }

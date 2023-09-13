@@ -2,9 +2,18 @@
 
 import Link from "next/link";
 import { use, useState } from "react";
+import { navBar } from "../localization";
+// import data from "./localization.json" assert { type: 'json' };
 
+interface bar {
+    home: string,
+    product: string,
+    contact_us: string
+};
 
-export default function NavMenu( {lang} : {lang: string}) {
+export default function NavMenu( {lang, menu} : {lang: string, menu: bar}) {
+    // const menu: bar = navBar[lang];
+    // console.log(typeof(data))
 
     const [menuType, setmenuType] = useState("hidden");
     return (
@@ -13,13 +22,13 @@ export default function NavMenu( {lang} : {lang: string}) {
             <div className="hidden lg:block">
                 <ul className="inline-flex items-center">
                     <li className="nav-element">
-                    <Link href={`/${lang}/`}>Home</Link>
+                    <Link href={`/${lang}/`}>{menu.home}</Link>
                     </li>
                     <li className="nav-element">
-                    <Link href={`/${lang}#gallery`}>Product</Link>
+                    <Link href={`/${lang}#gallery`}>{menu.product}</Link>
                     </li>
                     <li className="nav-element">
-                    <Link href={`/${lang}#contacts`}>Contact us</Link>
+                    <Link href={`/${lang}#contacts`}>{menu.contact_us}</Link>
                     </li>
                 </ul>
             </div>

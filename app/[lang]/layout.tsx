@@ -2,8 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import { i18n } from '@/i18n-config'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,7 +12,7 @@ export const metadata: Metadata = {
 }
 
 export async function generateStaticParams() {
-  return [{ lang: 'en' }, { lang: 'ru' }, { lang: 'hy' }]
+  return i18n.locales.map((locale) => ({ lang: locale }))
 }
 
 
@@ -26,17 +25,17 @@ export default function RootLayout({
 ) 
 {
 
-  const locale = params.lang
-
   return (
-    <html lang={locale}>
+    <html lang={params.lang}>
       <body className={inter.className}>
+
         <div className='bg-slate-300'>
-          <Header lang={locale}/>
+
+          {/* <Header lang={params.lang}/> */}
 
           {children}
 
-          <Footer />
+          {/* <Footer /> */}
 
         </div>
         
