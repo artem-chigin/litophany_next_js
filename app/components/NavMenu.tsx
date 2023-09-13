@@ -2,8 +2,6 @@
 
 import Link from "next/link";
 import { use, useState } from "react";
-import { navBar } from "../localization";
-// import data from "./localization.json" assert { type: 'json' };
 
 interface bar {
     home: string,
@@ -45,13 +43,13 @@ export default function NavMenu( {lang, menu} : {lang: string, menu: bar}) {
                 <div className={menuType}>
                     <ul className="text-end lg:hidden">
                         <li className="nav-element">
-                        <Link href="#">Home</Link>
+                        <Link href={`/${lang}/`}>{menu.home}</Link>
                         </li>
                         <li className="nav-element">
-                        <Link href="#product">Product</Link>
+                        <Link href={`/${lang}#gallery`}>{menu.product}</Link>
                         </li>
                         <li className="nav-element">
-                        <Link href="#contact">Contact us</Link>
+                        <Link href={`/${lang}#contacts`}>{menu.contact_us}</Link>
                         </li>
                     </ul>
                 </div>

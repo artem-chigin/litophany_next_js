@@ -6,5 +6,15 @@
         "home": "Главная",
         "product": "Галлерея",
         "contact_us": "Контакты"
+    },
+
+    "Gallery": {
+        "header": "Галлерея",
+        "products": {
+            "photo": "Лито Фото",
+            "night_lamp": "Ночник",
+            "cylinder_lamp": "Лампа Цилиндр",
+            "cube_lamp": "Лампа Куб"
+        }
     }
 }

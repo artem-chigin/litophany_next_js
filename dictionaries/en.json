@@ -7,5 +7,15 @@
         "home": "Home",
         "product": "Product",
         "contact_us": "Contact us"
+    },
+
+    "Gallery": {
+        "header": "Products",
+        "products": {
+            "photo": "Litho photo",
+            "night_lamp": "Night Lamp",
+            "cylinder_lamp": "Cylinder Lamp",
+            "cube_lamp": "Cube Lamp"
+        }
     }
 }

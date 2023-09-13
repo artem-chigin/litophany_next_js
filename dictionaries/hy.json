@@ -3,8 +3,18 @@
     "title": "Привет a;slkdjf"
     },
     "Navbar": {
-        "home": "Главная",
-        "product": "Галлерея",
-        "contact_us": "Контакты"
+        "home": "Главная_am",
+        "product": "Галлерея_am",
+        "contact_us": "Контакты_am"
+    },
+
+    "Gallery": {
+        "header": "Products_am",
+        "products": {
+            "photo": "Litho photo_am",
+            "night_lamp": "Night Lamp_am",
+            "cylinder_lamp": "Cylinder Lamp_am",
+            "cube_lamp": "Cube Lamp_am"
+        }
     }
 }

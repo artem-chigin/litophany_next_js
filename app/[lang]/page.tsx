@@ -19,7 +19,7 @@ export default async function Page({
 
     {/* My Post: {dictionary.Page.title} */}
     <Home />
-    <Gallery lang={lang}/>
+    <Gallery lang={lang} data={dictionary.Gallery}/>
 
     <Footer />
 
