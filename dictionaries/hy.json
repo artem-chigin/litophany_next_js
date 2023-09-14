@@ -16,5 +16,25 @@
             "cylinder_lamp": "Cylinder Lamp_am",
             "cube_lamp": "Cube Lamp_am"
         }
+    },
+
+    "Product": {
+        "litho-photo": {
+            "title": "Litho photo",
+            "description": "some description1"
+        },
+        "night_lamp": {
+            "title": "Night Lamp",
+            "description": "some description2"
+        },
+        "cylinder_lamp": {
+            "title": "Cylinder Lamp",
+            "description": "some description3"
+        },
+        "cube_lamp": {
+            "title": "Cube Lamp",
+            "description": "some description4"
+        }
+
     }
 }

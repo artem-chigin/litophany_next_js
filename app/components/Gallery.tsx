@@ -13,7 +13,7 @@ export default function Gallery({lang, data}: {lang: string, data: any}) {
         <Card 
 			title={data.products.photo}
 			path_to_img="/products/litho_photo/photo1.jpg"
-            link={`${lang}/photo`}
+            link={`${lang}/litho_photo`}
 			alt ="Litho Photo"/>
         <Card 
 			title={data.products.night_lamp}

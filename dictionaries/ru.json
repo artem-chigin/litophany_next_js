@@ -16,5 +16,24 @@
             "cylinder_lamp": "Лампа Цилиндр",
             "cube_lamp": "Лампа Куб"
         }
+    },
+
+    "Product": {
+        "litho-photo": {
+            "title": "Лито-фото",
+            "description": "описание"
+        },
+        "night_lamp": {
+            "title": "Ночник",
+            "description": "описание"
+        },
+        "cylinder_lamp": {
+            "title": "Лампа цилиндр",
+            "description": "описание"
+        },
+        "cube_lamp": {
+            "title": "Лампа куб",
+            "description": "описание"
+        }
     }
 }

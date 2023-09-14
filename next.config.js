@@ -2,8 +2,9 @@
 
 const nextConfig = {
     // output: 'export',
+    reactStrictMode: true,
 }
-
+module.exports = nextConfig
 // module.exports = nextConfig
 
 // const withNextIntl = require("next-intl/plugin")(
