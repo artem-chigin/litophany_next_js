@@ -11,7 +11,7 @@
     "Gallery": {
         "header": "Products_am",
         "products": {
-            "photo": "Litho photo_am",
+            "litho_photo": "Litho photo_am",
             "night_lamp": "Night Lamp_am",
             "cylinder_lamp": "Cylinder Lamp_am",
             "cube_lamp": "Cube Lamp_am"
@@ -19,7 +19,7 @@
     },
 
     "Product": {
-        "litho-photo": {
+        "litho_photo": {
             "title": "Litho photo",
             "description": "some description1"
         },

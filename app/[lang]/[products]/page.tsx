@@ -7,7 +7,6 @@ import { prod, productLinks, getProduct, Product } from "@/app/products";
 import { getDictionary } from "@/get-dictionary";
 import { Locale } from "@/i18n-config";
 
-console.log()
 
 export async function generateStaticParams() {
     return productLinks

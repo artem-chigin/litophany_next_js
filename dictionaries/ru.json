@@ -11,7 +11,7 @@
     "Gallery": {
         "header": "Галлерея",
         "products": {
-            "photo": "Лито Фото",
+            "litho_photo": "Лито Фото",
             "night_lamp": "Ночник",
             "cylinder_lamp": "Лампа Цилиндр",
             "cube_lamp": "Лампа Куб"
@@ -19,7 +19,7 @@
     },
 
     "Product": {
-        "litho-photo": {
+        "litho_photo": {
             "title": "Лито-фото",
             "description": "описание"
         },
