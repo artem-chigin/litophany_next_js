@@ -10,7 +10,7 @@ export default function Gallery({lang, data}: {lang: string, data: any}) {
         <Card 
             title={data.products[product.nameForLink]}
             path_to_img={product.pathToImages[0]}
-            link={`${lang}/litho_photo`}
+            link={`${lang}/${product.nameForLink}`}
             alt={product.altForImage}
             key={index}
         />

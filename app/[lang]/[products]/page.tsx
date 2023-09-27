@@ -1,8 +1,11 @@
 import fs from "fs";
 import path from "path";
 
+import { remark } from 'remark';
+import html from 'remark-html';
+
 import Carousel from "@/app/components/Carousel"
-import { prod, productLinks, getProduct, Product } from "@/app/products";
+import { prod, productLinks, getProduct, Product, getDescriptionForLang } from "@/app/products";
 
 import { getDictionary } from "@/get-dictionary";
 import { Locale } from "@/i18n-config";
@@ -13,14 +16,13 @@ export async function generateStaticParams() {
     // return [{ products: 'litho_photo' }, { products: 'night_lamp' }, { products: 'cylinder_lamp' }, {products: 'cube_lamp'}]
   }
 
-// let imagePaths = ["/products/litho_photo/photo1.jpg", "/products/litho_photo/photo2.jpg"];
-
 
 export default async function Product( { params: {lang, products} }: { params: { lang: Locale, products: string }} 
     ) {
-        console.log(products)
+        // console.log(products)
 
         const currentProduct: Product = getProduct(prod, products)
+        const description = await getDescriptionForLang(currentProduct, lang)
 
         const dictionary = await getDictionary(lang)
         const product_translation = dictionary.Product[products]
@@ -32,9 +34,9 @@ export default async function Product( { params: {lang, products} }: { params: {
                 <div className="block lg:w-1/2 px-5">
                     <Carousel paths_to_pictures={currentProduct.pathToImages}/>
                 </div>
-                <p className="p-10 lg:w-1/2 border">
-                    {product_translation.description}
-                </p>
+                {/* <p className="p-10 lg:w-1/2 border"> */}
+                <div dangerouslySetInnerHTML={{ __html: description }} /> 
+                               {/* </p> */}
             </div>               
         </section>
     )
