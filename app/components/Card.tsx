@@ -17,7 +17,7 @@ export default function Card({title, path_to_img, link, alt}: Card) {
     // const router = useRouter()
 
     return (
-        <div className="relative border-4 text-center m-1 hover:border-slate-500 lg: w-5/12">
+        <div className="relative border-4 text-center m-1 lg:w-5/12 hover:border-slate-500">
             <Link href={`/${link}`}>
                 <Image
                     className='m-auto '

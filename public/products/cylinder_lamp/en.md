@@ -1,6 +1,6 @@
-### Cube lamp
+### Cylinder Lamp
 
-**Cube lamp** in Lithophane technique.
+**Cube lamp** in Lithophane technique.  
 Price: AMD 35000
 
 > Production term - 1-1,5 weeks.

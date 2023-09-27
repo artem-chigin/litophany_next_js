@@ -29,13 +29,13 @@ export default async function Product( { params: {lang, products} }: { params: {
 
     return (
         <section className="py-10 max-w-screen-xl m-auto border">
-            <h3 className="py-3 text-center text-5xl text-gray-800">{product_translation.title}</h3>
+            {/* <h3 className="py-3 text-center text-5xl text-gray-800">{product_translation.title}</h3> */}
             <div className="lg:flex justify-evenly">
                 <div className="block lg:w-1/2 px-5">
                     <Carousel paths_to_pictures={currentProduct.pathToImages}/>
                 </div>
                 {/* <p className="p-10 lg:w-1/2 border"> */}
-                <div dangerouslySetInnerHTML={{ __html: description }} /> 
+                <div className="product-info" dangerouslySetInnerHTML={{ __html: description }} /> 
                                {/* </p> */}
             </div>               
         </section>

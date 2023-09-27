@@ -11,6 +11,7 @@ import { Locale } from "@/i18n-config";
 // import matter from 'gray-matter';
 
 import { micromark } from "micromark";
+import {gfm, gfmHtml} from 'micromark-extension-gfm'
 
 
 
@@ -68,7 +69,11 @@ function getDescriptionForLang(product: Product, lang: Locale) {
         if (fileName.startsWith(lang)) {
             const fullpath = path.join(process.cwd(), `public/products/${product.nameForLink}/${fileName}`)
             const content = fs.readFileSync(fullpath, "utf-8")
-            const htmlContent = micromark(content)
+            const htmlContent = micromark(content, {
+                allowDangerousHtml: true,
+                extensions: [gfm()],
+                htmlExtensions: [gfmHtml()]
+              })
             
 
             return htmlContent

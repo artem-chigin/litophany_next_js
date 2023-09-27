@@ -33,3 +33,11 @@ body {
 .footer-link {
   @apply flex space-x-3 py-2 hover:underline underline-offset-8;
 }
+
+.product-info {
+  @apply p-5
+}
+
+.product-info > h3 {
+    @apply text-3xl text-center py-5
+}
