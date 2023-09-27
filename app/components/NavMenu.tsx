@@ -3,13 +3,16 @@
 import Link from "next/link";
 import { use, useState } from "react";
 
+import LangDropdown from "./LangDropdown";
+import { Locale } from "@/i18n-config";
+
 interface bar {
     home: string,
     product: string,
     contact_us: string
 };
 
-export default function NavMenu( {lang, menu} : {lang: string, menu: bar}) {
+export default function NavMenu( {lang, menu} : {lang: Locale, menu: bar}) {
     // const menu: bar = navBar[lang];
     // console.log(typeof(data))
 
@@ -17,7 +20,7 @@ export default function NavMenu( {lang, menu} : {lang: string, menu: bar}) {
     return (
         <nav className="flex items-center">
 
-            <div className="hidden lg:block">
+            <div className="hidden lg:flex">
                 <ul className="inline-flex items-center">
                     <li className="nav-element">
                     <Link href={`/${lang}/`}>{menu.home}</Link>
@@ -29,6 +32,7 @@ export default function NavMenu( {lang, menu} : {lang: string, menu: bar}) {
                     <Link href={`/${lang}#contacts`}>{menu.contact_us}</Link>
                     </li>
                 </ul>
+                <LangDropdown lang={lang}/>
             </div>
         
             <div className="visible lg:invisible">
@@ -40,7 +44,7 @@ export default function NavMenu( {lang, menu} : {lang: string, menu: bar}) {
                 
                 {/* <hr></hr> */}
 
-                <div className={menuType}>
+                <div className={`${menuType} my-5 absolute right-0`}>
                     <ul className="text-end lg:hidden">
                         <li className="nav-element">
                         <Link href={`/${lang}/`}>{menu.home}</Link>
@@ -52,6 +56,8 @@ export default function NavMenu( {lang, menu} : {lang: string, menu: bar}) {
                         <Link href={`/${lang}#contacts`}>{menu.contact_us}</Link>
                         </li>
                     </ul>
+                    
+                    <LangDropdown lang={lang} />
                 </div>
             </div>
 
