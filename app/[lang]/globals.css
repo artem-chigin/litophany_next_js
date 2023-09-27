@@ -41,3 +41,11 @@ body {
 .product-info > h3 {
     @apply text-3xl text-center py-5
 }
+
+.product-info > p {
+  @apply m-3
+}
+
+.product-info > blockquote {
+  @apply m-3 text-sm italic
+}

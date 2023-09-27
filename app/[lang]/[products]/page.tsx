@@ -35,7 +35,7 @@ export default async function Product( { params: {lang, products} }: { params: {
                     <Carousel paths_to_pictures={currentProduct.pathToImages}/>
                 </div>
                 {/* <p className="p-10 lg:w-1/2 border"> */}
-                <div className="product-info" dangerouslySetInnerHTML={{ __html: description }} /> 
+                <div className="product-info lg:w-1/2" dangerouslySetInnerHTML={{ __html: description }} /> 
                                {/* </p> */}
             </div>               
         </section>
