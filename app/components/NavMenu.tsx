@@ -42,8 +42,8 @@ export default function NavMenu( {lang, menu} : {lang: Locale, menu: bar}) {
                 <LangDropdown lang={lang}/>
             </div>
         
-            <div className="visible lg:invisible">
-                <div ref={ref} className="dropdown-btn flex justify-end" onClick={() => setMenuState((menuState === "visible") ? "hidden": "visible")}>
+            <div ref={ref} className="visible lg:invisible">
+                <div className="dropdown-btn flex justify-end" onClick={() => setMenuState((menuState === "visible") ? "hidden": "visible")}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                     </svg>
