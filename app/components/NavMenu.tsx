@@ -20,7 +20,7 @@ export default function NavMenu( {lang, menu} : {lang: Locale, menu: bar}) {
 
     const ref = useOutsideClick(() => {
         setMenuState("hidden")
-        console.log('Clicked outside of MyComponent');
+        // console.log('Clicked outside of MyComponent');
       });
 
 
