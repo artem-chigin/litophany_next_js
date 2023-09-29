@@ -1,9 +1,3 @@
-import fs from "fs";
-import path from "path";
-
-import { remark } from 'remark';
-import html from 'remark-html';
-
 import Carousel from "@/app/components/Carousel"
 import { prod, productLinks, getProduct, Product, getDescriptionForLang } from "@/app/products";
 

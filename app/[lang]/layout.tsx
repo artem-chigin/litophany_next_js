@@ -38,7 +38,7 @@ export default async function RootLayout({
 
         <div className='bg-slate-300'>
 
-        <Header lang={params.lang} menu={dictionary.Navbar} />
+        <Header lang={params.lang} menu={dictionary.Navbar}/>
 
           {children}
 

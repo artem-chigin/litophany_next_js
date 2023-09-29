@@ -15,8 +15,8 @@ export default function LangDropdown( {lang}: {lang: Locale}) {
       });
 
     return (
-        <div className="inline">
-            <div ref={ref} className="flex items-center  hover:text-slate-800 hover:bg-slate-500"  onClick={() => setDropdownState((dropdownState === "visible") ? "hidden": "visible")} >
+        <div ref={ref} className="inline">
+            <div  className="flex items-center  hover:text-slate-800 hover:bg-slate-500"  onClick={() => setDropdownState((dropdownState === "visible") ? "hidden": "visible")} >
                 <button className="inline px-6 py-3">{lang}</button>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
@@ -26,13 +26,13 @@ export default function LangDropdown( {lang}: {lang: Locale}) {
         <div id="myDropdown" className={`${dropdownState} absolute border`}>
           <ul>
             <li>
-                <Link href="#">English</Link>
+                <Link href={`/en/`}>English</Link>
             </li>
             <li>
-                <Link href="#">Русский</Link>
+                <Link href={`/ru/`}>Русский</Link>
             </li>
             <li>
-                <Link href="#">Hy</Link>
+                <Link href={`/hy/`}>Hy</Link>
             </li>
           </ul>
         </div>
