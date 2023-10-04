@@ -1,9 +1,16 @@
-### Cube lamp
+### Postcard
 
-**Cube lamp** in Lithophane technique.
-Price: AMD 35000
+**Photo postcard** in the technique of Lithophane.
 
-> Production term - 1-1,5 weeks.
-> The lamp consists of 5 photos.
-> Photo size 15x15 cm.
-> Rotating body."
+Price - **7000 AMD**.
+
+>We print in 4:3 or 4:3 format
+>Dimensions: Horizontal photo: height 140mm, width 179mm.
+>Vertical photo: height 170mm, width 125mm.
+>Arc angle 60°
+
+>Production time: 3-4 days
+
+>The better the quality of the original photo, the better it will be printed. 
+>The quality of the original photo should be at least 1 megabyte. 
+"
