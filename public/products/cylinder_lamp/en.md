@@ -1,9 +1,8 @@
 ### Cylinder Lamp
 
-**Cube lamp** in Lithophane technique.  
-*Price:*     **AMD 35000**
+**Cylindrical lamp** in the Lithophane technique ✨
+It is rotated (manually) by a turntable, so it can be twisted and viewed 😍
 
-> Production term - 1-1,5 weeks.
-> The lamp consists of 5 photos.
-> Photo size 15x15 cm.
-> Rotating body."
+Price: **AMD 25000**
+
+>Production time: 7 days
