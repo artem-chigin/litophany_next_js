@@ -1,9 +1,10 @@
-### Cube lamp AM
+### Լամպ խորանարդ
 
-**Cube lamp** in Lithophane technique.
-Price: AMD 35000
+**Լամպ-խորանարդ** Լիտոֆանի տեխնիկայում.
 
-> Production term - 1-1,5 weeks.
-> The lamp consists of 5 photos.
-> Photo size 15x15 cm.
-> Rotating body."
+Գինը՝ **35000 դրամ**
+
+>Արտադրության ժամանակը - 1-1,5 շաբաթ:
+>Լամպ Բաղկացած է 5 լուսանկարից։
+>Լուսանկարի չափսը՝ 15x15 սմ։
+>Պտտվող մարմին. 
