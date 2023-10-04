@@ -16,10 +16,11 @@ export default async function Product( { params: {lang, products} }: { params: {
         // console.log(products)
 
         const currentProduct: Product = getProduct(prod, products)
-        const description = await getDescriptionForLang(currentProduct, lang)
+        const description = getDescriptionForLang(currentProduct, lang)
 
-        const dictionary = await getDictionary(lang)
-        const product_translation = dictionary.Product[products]
+
+        // const dictionary = await getDictionary(lang)
+        // const product_translation = dictionary.Product[products]
 
     return (
         <section className="py-10 max-w-screen-xl m-auto border">
@@ -28,9 +29,7 @@ export default async function Product( { params: {lang, products} }: { params: {
                 <div className="block lg:w-1/2 px-5">
                     <Carousel paths_to_pictures={currentProduct.pathToImages}/>
                 </div>
-                {/* <p className="p-10 lg:w-1/2 border"> */}
                 <div className="product-info lg:w-1/2" dangerouslySetInnerHTML={{ __html: description }} /> 
-                               {/* </p> */}
             </div>               
         </section>
     )

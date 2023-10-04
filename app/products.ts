@@ -64,7 +64,7 @@ function getProduct(prods: any, nameForLink: string) {
     }
 }
 
-function getDescriptionForLang(product: Product, lang: Locale) {
+function getDescriptionForLang(product: Product, lang: Locale): string {
     for (let fileName of product.descriptions) {
         if (fileName.startsWith(lang)) {
             const fullpath = path.join(process.cwd(), `public/products/${product.nameForLink}/${fileName}`)
@@ -74,11 +74,11 @@ function getDescriptionForLang(product: Product, lang: Locale) {
                 extensions: [gfm()],
                 htmlExtensions: [gfmHtml()]
               })
-            
-
             return htmlContent
         }
     }
+
+    return ""
 }
 
 export {productLinks, prod, getProduct, createProducts, getDescriptionForLang}
