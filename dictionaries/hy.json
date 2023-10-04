@@ -1,11 +1,11 @@
 {
     "Page": {
-    "title": "Привет a;slkdjf"
+    "title": "Litho-print"
     },
     "Navbar": {
-        "home": "Главная_am",
-        "product": "Галлерея_am",
-        "contact_us": "Контакты_am"
+        "home": "Գլխավոր էջ",
+        "product": "Կատալոգ",
+        "contact_us": "Կապ"
     },
 
     "Gallery": {
