@@ -1,9 +1,10 @@
-### Cube lamp
+### Nightlight
 
-**Cube lamp** in Lithophane technique.
-Price: AMD 35000
+A nightlight lamp that plugs into a socket
 
-> Production term - 1-1,5 weeks.
-> The lamp consists of 5 photos.
-> Photo size 15x15 cm.
-> Rotating body."
+Price: **AMD 15000**
+
+>Production time: 3-4 days
+ 
+>Can be any of your horizontal photo, not only cartoon image. 
+>Any picture in good quality (from 1 megabyte) or personal photos.
